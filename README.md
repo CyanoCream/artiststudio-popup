@@ -7,7 +7,7 @@ A WordPress plugin for displaying custom popups using React and WordPress REST A
 1. Clone this repository to your WordPress plugins directory:
 ```bash
 cd wp-content/plugins
-git clone [repository-url] artistudio-popup
+git clone https://github.com/CyanoCream/artiststudio-popup
 ```
 
 2. Install dependencies:
