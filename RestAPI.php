@@ -1,3 +1,4 @@
+
 <?php
 namespace Artistudio\Popup;
 
@@ -32,3 +33,4 @@ class RestAPI {
         return rest_ensure_response($data);
     }
 }
+

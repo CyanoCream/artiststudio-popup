@@ -58,12 +58,13 @@ class Plugin {
         ]);
     }
     public function registerRestRoutes() {
-        require_once plugin_dir_path(__FILE__) . 'RestAPI.php';
-        $api = new Artistudio\Popup\RestAPI();
-        $api->registerRoutes();
+	require_once plugin_dir_path(__FILE__) . 'RestAPI.php';
+	$api = new RestAPI();
+	$api->registerRoutes();
+
     }
     public function enqueueScripts() {
-        wp_enqueue_script('artistudio-popup-script', plugins_url('frontend/dist/popup.bundle.js', __FILE__), [], ARTISTUDIO_POPUP_VERSION, true);
+        wp_enqueue_script('artistudio-popup-script', plugins_url('frontend/dist/popup.bundle.js', __FILE__) , [], ARTISTUDIO_POPUP_VERSION, true);
     }
     
 }
